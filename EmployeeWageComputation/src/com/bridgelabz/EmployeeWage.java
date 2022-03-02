@@ -9,8 +9,24 @@ public class EmployeeWage {
 	public static void main(String[] args) {
 		
 		int value = (int)Math.floor(Math.random()*10) % 3;
-		
-		if(value == IS_FULL_TIME) {
+
+		switch (value) {
+		case IS_FULL_TIME: {
+			int empHrs = 8;
+			int empWage = WAGE_PER_HOUR * empHrs; 
+			System.out.println("Employee is Present (Full Time) and Wage is :" +empWage);
+			break;
+			}
+		case IS_PART_TIME: {
+			int empHrs = 4;
+			int empWage = WAGE_PER_HOUR * empHrs; 
+			System.out.println("Employee is Present (Part Time) and Wage is :" +empWage);
+			break;
+			}
+		default:
+			System.out.println("Employee is Absent ....");	
+		}
+		/*if(value == IS_FULL_TIME) {
 			int empHrs = 8;
 			int empWage = WAGE_PER_HOUR * empHrs; 
 			System.out.println("Employee is Present (Full Time) and Wage is :" +empWage);
@@ -22,5 +38,6 @@ public class EmployeeWage {
 		}
 		else 
 		System.out.println("Employee is Absent ....");	
-		}
+		}*/
+	}
 }
