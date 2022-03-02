@@ -7,8 +7,6 @@ public class EmployeeWage {
 	static final int IS_PART_TIME=2;
 	static final int MAX_WORKING_DAYS=20;
 	static final int MAX_WORKING_HRS=100;
-//	static final int ABSENT=0;
-
 
 	public static void main(String[] args) {
 		int total_Employee_Wage=0;
