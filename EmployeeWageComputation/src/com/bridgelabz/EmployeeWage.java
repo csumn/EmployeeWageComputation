@@ -17,14 +17,14 @@ public class EmployeeWage {
 		case IS_FULL_TIME: {
 			int empHrs = 8;
 			int empWage = WAGE_PER_HOUR_IS * empHrs; 
-			System.out.println("Employee is Present Full time and will receive " +WAGE_PER_HOUR_IS*8);
+			System.out.println("Employee is Present Full time and will receive " +WAGE_PER_HOUR_IS*empHrs);
 			total_Employee_Wage=total_Employee_Wage+empWage;
 			break;
 			}
 		case IS_PART_TIME: {
 			int empHrs = 4;
 			int empWage = WAGE_PER_HOUR_IS * empHrs; 
-			System.out.println("Employee is Present Part time and will receive " +WAGE_PER_HOUR_IS*4 );
+			System.out.println("Employee is Present Part time and will receive " +WAGE_PER_HOUR_IS*empHrs );
 			total_Employee_Wage=total_Employee_Wage+empWage;
 			break;
 			}
